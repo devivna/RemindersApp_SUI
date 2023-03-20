@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var searchField = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                SearchBar(text: searchField)
+                
+                CardView()
+                    .padding()
+                
+                Text("My Lists")
+                Spacer()
+            }
+            .background(.gray.opacity(0.15))
         }
-        .padding()
     }
 }
 

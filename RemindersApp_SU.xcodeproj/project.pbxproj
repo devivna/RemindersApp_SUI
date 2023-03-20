@@ -11,6 +11,10 @@
 		AF9A410529C60D7600CFB7D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A410429C60D7600CFB7D5 /* ContentView.swift */; };
 		AF9A410729C60D7800CFB7D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9A410629C60D7800CFB7D5 /* Assets.xcassets */; };
 		AF9A410A29C60D7800CFB7D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9A410929C60D7800CFB7D5 /* Preview Assets.xcassets */; };
+		AF9A411129C60E0100CFB7D5 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A411029C60E0100CFB7D5 /* SearchBar.swift */; };
+		AF9A411329C611C900CFB7D5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A411229C611C900CFB7D5 /* CardView.swift */; };
+		AF9A411729C617D700CFB7D5 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A411629C617D700CFB7D5 /* CardModel.swift */; };
+		AF9A411929C6327B00CFB7D5 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A411829C6327B00CFB7D5 /* CardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		AF9A410429C60D7600CFB7D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF9A410629C60D7800CFB7D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF9A410929C60D7800CFB7D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF9A411029C60E0100CFB7D5 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		AF9A411229C611C900CFB7D5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AF9A411629C617D700CFB7D5 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		AF9A411829C6327B00CFB7D5 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				AF9A410229C60D7600CFB7D5 /* RemindersApp_SUApp.swift */,
 				AF9A410429C60D7600CFB7D5 /* ContentView.swift */,
+				AF9A411229C611C900CFB7D5 /* CardView.swift */,
+				AF9A411829C6327B00CFB7D5 /* CardViewModel.swift */,
+				AF9A411629C617D700CFB7D5 /* CardModel.swift */,
+				AF9A411029C60E0100CFB7D5 /* SearchBar.swift */,
 				AF9A410629C60D7800CFB7D5 /* Assets.xcassets */,
 				AF9A410829C60D7800CFB7D5 /* Preview Content */,
 			);
@@ -139,6 +151,10 @@
 			files = (
 				AF9A410529C60D7600CFB7D5 /* ContentView.swift in Sources */,
 				AF9A410329C60D7600CFB7D5 /* RemindersApp_SUApp.swift in Sources */,
+				AF9A411929C6327B00CFB7D5 /* CardViewModel.swift in Sources */,
+				AF9A411129C60E0100CFB7D5 /* SearchBar.swift in Sources */,
+				AF9A411329C611C900CFB7D5 /* CardView.swift in Sources */,
+				AF9A411729C617D700CFB7D5 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
