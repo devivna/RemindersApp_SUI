@@ -15,6 +15,10 @@
 		AF9A411329C611C900CFB7D5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A411229C611C900CFB7D5 /* CardView.swift */; };
 		AF9A411729C617D700CFB7D5 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A411629C617D700CFB7D5 /* CardModel.swift */; };
 		AF9A411929C6327B00CFB7D5 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A411829C6327B00CFB7D5 /* CardViewModel.swift */; };
+		AFE2114829C87E4F00AB58E2 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2114729C87E4F00AB58E2 /* CoreDataProvider.swift */; };
+		AFE2114B29C8A2C700AB58E2 /* RemindersModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFE2114929C8A2C700AB58E2 /* RemindersModel.xcdatamodeld */; };
+		AFE2114E29C8A9EA00AB58E2 /* MyList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2114D29C8A9EA00AB58E2 /* MyList+CoreDataClass.swift */; };
+		AFE2115029C8AA8D00AB58E2 /* MyList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2114F29C8AA8D00AB58E2 /* MyList+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		AF9A411229C611C900CFB7D5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AF9A411629C617D700CFB7D5 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		AF9A411829C6327B00CFB7D5 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		AFE2114729C87E4F00AB58E2 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		AFE2114A29C8A2C700AB58E2 /* RemindersModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RemindersModel.xcdatamodel; sourceTree = "<group>"; };
+		AFE2114D29C8A9EA00AB58E2 /* MyList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AFE2114F29C8AA8D00AB58E2 /* MyList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +68,14 @@
 			isa = PBXGroup;
 			children = (
 				AF9A410229C60D7600CFB7D5 /* RemindersApp_SUApp.swift */,
+				AFE2114C29C8A9C100AB58E2 /* Models */,
 				AF9A410429C60D7600CFB7D5 /* ContentView.swift */,
 				AF9A411229C611C900CFB7D5 /* CardView.swift */,
 				AF9A411829C6327B00CFB7D5 /* CardViewModel.swift */,
 				AF9A411629C617D700CFB7D5 /* CardModel.swift */,
 				AF9A411029C60E0100CFB7D5 /* SearchBar.swift */,
+				AFE2114729C87E4F00AB58E2 /* CoreDataProvider.swift */,
+				AFE2114929C8A2C700AB58E2 /* RemindersModel.xcdatamodeld */,
 				AF9A410629C60D7800CFB7D5 /* Assets.xcassets */,
 				AF9A410829C60D7800CFB7D5 /* Preview Content */,
 			);
@@ -77,6 +88,15 @@
 				AF9A410929C60D7800CFB7D5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFE2114C29C8A9C100AB58E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AFE2114D29C8A9EA00AB58E2 /* MyList+CoreDataClass.swift */,
+				AFE2114F29C8AA8D00AB58E2 /* MyList+CoreDataProperties.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE2114E29C8A9EA00AB58E2 /* MyList+CoreDataClass.swift in Sources */,
 				AF9A410529C60D7600CFB7D5 /* ContentView.swift in Sources */,
 				AF9A410329C60D7600CFB7D5 /* RemindersApp_SUApp.swift in Sources */,
+				AFE2115029C8AA8D00AB58E2 /* MyList+CoreDataProperties.swift in Sources */,
 				AF9A411929C6327B00CFB7D5 /* CardViewModel.swift in Sources */,
 				AF9A411129C60E0100CFB7D5 /* SearchBar.swift in Sources */,
+				AFE2114829C87E4F00AB58E2 /* CoreDataProvider.swift in Sources */,
+				AFE2114B29C8A2C700AB58E2 /* RemindersModel.xcdatamodeld in Sources */,
 				AF9A411329C611C900CFB7D5 /* CardView.swift in Sources */,
 				AF9A411729C617D700CFB7D5 /* CardModel.swift in Sources */,
 			);
@@ -355,6 +379,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AFE2114929C8A2C700AB58E2 /* RemindersModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AFE2114A29C8A2C700AB58E2 /* RemindersModel.xcdatamodel */,
+			);
+			currentVersion = AFE2114A29C8A2C700AB58E2 /* RemindersModel.xcdatamodel */;
+			path = RemindersModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AF9A40F729C60D7500CFB7D5 /* Project object */;
 }
