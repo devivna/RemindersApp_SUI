@@ -23,13 +23,16 @@ struct MainView: View {
                 Text("My Lists")
                 Spacer()
                 
-                    
             }
             
             .sheet(isPresented: $isPresentAddNewListSheet) {
                 NavigationView {
                     AddListView { nameList, color in
-                        // save the list
+                        do {
+                            try ReminderService.saveMyList(nameList, color)
+                        } catch {
+                            print("error")
+                        }
                     }
                 }
             }
@@ -53,5 +56,6 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+            .environment(\.managedObjectContext, CoreDataPtovider.shared.persistentContainer.viewContext)
     }
 }

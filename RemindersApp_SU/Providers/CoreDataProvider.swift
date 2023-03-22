@@ -13,6 +13,10 @@ class CoreDataPtovider {
     let persistentContainer: NSPersistentContainer
     
     private init() {
+        
+        // register custom transformer
+        ValueTransformer.setValueTransformer(UIColorTransformer(), forName: NSValueTransformerName("UIColorTransformer"))
+        
         persistentContainer = NSPersistentContainer(name: "RemindersModel")
         persistentContainer.loadPersistentStores { description, error in
             if let error {
