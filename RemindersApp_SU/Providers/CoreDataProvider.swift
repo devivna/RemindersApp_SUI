@@ -8,8 +8,8 @@
 import Foundation
 import CoreData
 
-class CoreDataPtovider {
-    static let shared = CoreDataPtovider()
+class CoreDataProvider {
+    static let shared = CoreDataProvider()
     let persistentContainer: NSPersistentContainer
     
     private init() {

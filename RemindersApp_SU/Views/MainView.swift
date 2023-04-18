@@ -9,6 +9,9 @@ import SwiftUI
 
 struct MainView: View {
     
+    @FetchRequest(sortDescriptors: [])
+    private var myListResults: FetchedResults<MyList>
+    
     @State private var searchField = ""
     @State private var isPresentAddNewListSheet = false
     
@@ -21,6 +24,14 @@ struct MainView: View {
                     .padding()
                 
                 Text("My Lists")
+                
+//                List(myListResults) { list in
+//                    Text(list.name)
+//                }
+//                List(myListResults) { list  in
+//                    Text(list.name)
+//                }
+                
                 Spacer()
                 
             }
@@ -56,6 +67,6 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
-            .environment(\.managedObjectContext, CoreDataPtovider.shared.persistentContainer.viewContext)
+            .environment(\.managedObjectContext, CoreDataProvider.shared.persistentContainer.viewContext)
     }
 }

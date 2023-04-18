@@ -11,7 +11,7 @@ import UIKit
 
 class ReminderService {
     static var viewContext: NSManagedObjectContext {
-        CoreDataPtovider.shared.persistentContainer.viewContext
+        CoreDataProvider.shared.persistentContainer.viewContext
     }
     
     static func save() throws {

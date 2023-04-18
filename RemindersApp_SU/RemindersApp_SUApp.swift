@@ -12,7 +12,7 @@ struct RemindersApp_SUApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
-                .environment(\.managedObjectContext, CoreDataPtovider.shared.persistentContainer.viewContext)
+                .environment(\.managedObjectContext, CoreDataProvider.shared.persistentContainer.viewContext)
         }
     }
 }
